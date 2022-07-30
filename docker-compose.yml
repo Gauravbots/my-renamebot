@@ -6,7 +6,6 @@ services:
       API_ID: $API_ID
       API_HASH: $API_HASH
       BOT_TOKEN: $BOT_TOKEN
-      FORCE_SUB: $FORCE_SUB
       ADMIN: $ADMIN
       DB_URL: $DATABASE_URI
       DB_NAME: $DATABASE_NAME
