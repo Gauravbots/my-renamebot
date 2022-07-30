@@ -88,20 +88,7 @@ async def cb_handler(client, query: CallbackQuery):
                ]]
             )
         )
-    elif data == "dev":
-        await query.message.edit_text(
-            text=mr.DEV_TXT,
-            reply_markup=InlineKeyboardMarkup( [[
-               #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ 𝚂𝙾𝚄𝚁𝙲𝙴", url="https://t.me/BotMinister")
-               ],[
-               InlineKeyboardButton("🖥️ 𝙷𝙾𝚆 𝚃𝙾 𝙼𝙰𝙺𝙴", url="https://t.me/BotMinister")
-               ],[
-               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
-               ]]
-            )
-        )
+    
     elif data == "close":
         try:
             await query.message.delete()
