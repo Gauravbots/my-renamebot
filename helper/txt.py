@@ -34,6 +34,7 @@ class mr(object):
 Example:- /set_caption 📕 File Name: {filename}
 💾 Size: {filesize}
 ⏰ Duration: {duration}
+😜 Join My Channel: your channel link
 
 ✏️ <b><u>HOW TO RENAME A FILE</u></b>
 •> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
