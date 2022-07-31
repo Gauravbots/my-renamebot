@@ -19,7 +19,7 @@ async def start(client, message):
     insert(int(message.chat.id))
     await message.reply_photo(
        photo=START_PIC,
-       caption=f"""👋 Hii {message.from_user.mention} \n𝗜'𝗺 𝗔 𝗦𝗶𝗺𝗽𝗹𝗲 𝗙𝗶𝗹𝗲 𝗥𝗲𝗻𝗮𝗺𝗲+𝗙𝗶𝗹𝗹𝗲 𝗧𝗼 𝗩𝗶𝗱𝗲𝗼 𝗖𝗼𝘃𝗲𝗿𝘁𝗲𝗿 𝗕𝗼𝘁 𝗪𝗶𝘁𝗵 𝗣𝗲𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗧𝗵𝘂𝗺𝗯𝗻𝗮𝗶𝗹 & 𝗖𝘂𝘀𝘁𝗼𝗺 𝗖𝗮𝗽𝘁𝗶𝗼𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁!\nℹ️ 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/BotCreator99>@BotCreator99</a> """,
+       caption=f"""👋 𝗛𝗶𝗶 {message.from_user.mention} \n𝗜'𝗺 𝗔 𝗦𝗶𝗺𝗽𝗹𝗲 𝗙𝗶𝗹𝗲 𝗥𝗲𝗻𝗮𝗺𝗲+𝗙𝗶𝗹𝗹𝗲 𝗧𝗼 𝗩𝗶𝗱𝗲𝗼 𝗖𝗼𝘃𝗲𝗿𝘁𝗲𝗿 𝗕𝗼𝘁 𝗪𝗶𝘁𝗵 𝗣𝗲𝗿𝗺𝗮𝗻𝗲𝗻𝘁 𝗧𝗵𝘂𝗺𝗯𝗻𝗮𝗶𝗹 & 𝗖𝘂𝘀𝘁𝗼𝗺 𝗖𝗮𝗽𝘁𝗶𝗼𝗻 𝗦𝘂𝗽𝗽𝗼𝗿𝘁!\nℹ️ 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/BotCreator99>@BotCreator99</a> """,
        reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/BotMinister'),
                 InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
@@ -46,7 +46,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hai {query.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚞𝚜𝚝𝚘𝚖 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! """,
+            text=f"""👋 Hai {query.from_user.mention} \n I am a super renamer bot! 😄""",
             reply_markup=InlineKeyboardMarkup( [[
                 InlineKeyboardButton('❤️ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/BotMinister'),
                 InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
@@ -58,7 +58,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton("🤔🔥 𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴  🤔🔥", url='https://t.me/BotMinister')
+               InlineKeyboardButton("🤔🤔 𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴  🤔🤔", url='https://t.me/BotMinister')
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
